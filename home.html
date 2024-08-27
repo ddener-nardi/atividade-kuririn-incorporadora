@@ -61,7 +61,7 @@
                 <!-- common menu -->
                 <div class="row d-none d-md-flex">
                     <div class="navbar position-relative p-0">                     
-                        <div class="menu-logo d-none d-md-block position-absolute">
+                        <div class="menu-logo d-none d-md-block position-absolute ">
                             <img src="imgs/logo-menu.svg" alt="logo incoporadora">
                         </div>
                         <div class="menu-large col-xl-6 offset-xl-2 offset-xxl-1 d-none d-xl-flex justify-content-center align-items-center">
@@ -92,13 +92,13 @@
         <!-- first main section -->
         <section>
             <div class="container-fluid p-0">
-                <div class="front-section position-relative z-n1">
-                    <div class="front-vertical-wrapper">
-                        <div class="main-button">
-                            <button class="btn" id="vertical-prev"></button>
-                            <button class="btn" id="vertical-next"></button>
+                <div class="front-section position-relative d-flex">
+                    <div class="front-vertical-wrapper position-absolute me-3">
+                        <div class="main-button d-flex flex-column position-relative align-items-center">
+                            <button class="btn" id="vertical-prev"><img src="imgs/chevron-prev.svg"></button>
+                            <button class="btn" id="vertical-next"><img src="imgs/chevron-next.svg"></button>
                         </div>
-                        <div class="vertical-dots">
+                        <div class="vertical-dots d-flex flex-column justify-content-center align-items-center">
                             <div class="dot"></div>
                             <div class="dot"></div>
                             <div class="dot"></div>
@@ -106,8 +106,28 @@
                             <div class="dot"></div>
                         </div>
                     </div>
-                    <div class="front-section-images">
-                        
+                    <div class="front-lead col-lg-4 offset-lg-7 d-flex align-items-start justify-content-center flex-column">
+                        <h1>Últimos lotes disponíveis</h1>
+                        <h2>Não perca a chance de viver bem!</h2>
+                        <p>Presidente Prudente - SP &#8226; 110 Lotes</p>
+                        <button class="btn btn-outline-light">Clique e Conheça</button>
+                    </div>
+                    <div class="front-section-images position-absolute bottom-0 d-flex">
+                        <div class="f-section-img active">
+                            <img src="imgs/front-image-1.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="f-section-img">
+                            <img src="imgs/front-image-2.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="f-section-img">
+                            <img src="imgs/front-image-3.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="f-section-img">
+                            <img src="imgs/front-image-4.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="f-section-img">
+                            <img src="imgs/front-image-5.png" class="img-fluid" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
