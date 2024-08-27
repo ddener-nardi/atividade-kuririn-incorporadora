@@ -119,6 +119,7 @@
     width: 100%;
     border-radius: 20px 20px 0 0;
     box-shadow: 0px -20px 30px #0000003c;
+    background-color: white;
 }
 .front-section{
     background-image: url(../imgs/bg-img-home.jpg);
