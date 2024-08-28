@@ -124,10 +124,15 @@
     box-shadow: 0px -20px 30px #0000003c;
     background-color: white;
 }
+/* first main sec */
 .front-section{
     background-image: url(../imgs/bg-img-home.jpg);
     min-height: 569px;
     
+}
+.front-section-images{
+    max-width: 694px;
+    min-width: none;
 }
 .f-section-img{
     position: relative;
@@ -180,6 +185,7 @@
     outline: 2px solid rgba(255, 255, 255, 0.594);
     outline-offset: 5px;
 }
+
 .front-lead h1{
     color: var(--color3);
     font-weight: 800;
@@ -193,6 +199,29 @@
 }
 .front-lead p{
     color: white;
+    font-weight: 500;
     text-transform: uppercase;
+    font-size: 20px;
 }
-
+.lead-btn{
+    border: 2px solid white;
+    padding: 16px 26px;
+    color: white;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+/* footer */
+/* footer first sec */
+.email-section{
+    background-color: #000;
+}
+.email-title h4{
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.email-divisor{
+    height: 9px;
+    background-color: rgba(255, 255, 255, 0.150);
+    margin: 24px 0 40px 0;
+}
