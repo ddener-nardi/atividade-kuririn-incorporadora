@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color1: #8A1002;
+    --color2: #028A49;
+    --color3: #FFAE5C;
+    --fontmontserrat: 'Montserrat';
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+/* first contact section */
+.contact-container{
+    background-color: black;
+    min-height: 252px;
+    height: 100%;
+    color: white;
+}
+.contact-container h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.identifyer-divisor{
+    height: 9px;
+    background-color: #8A1002;
+}
+.breadcrumb{
+    color: #767676;
+}
+.second-container{
+    height: 528px;
+}
+.second-container input{
+    width: 100%;
+    height: 51px;
+    color: black;
+    padding-left: 10px;
+    /* margin: 19px 0 0 0; */
+}
+.second-container input::placeholder{
+    color: black;
+}
+.second-container textarea{
+    width: 100%;
+    height: 100%;
+    color: black;
+    /* margin-top: 19px; */
+}
+.second-container textarea::placeholder{
+    color: black;
+    padding-left: 10px;
+}

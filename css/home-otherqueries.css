@@ -29,9 +29,6 @@
         bottom: -400px;
         z-index: 1111;
     }
-    .main-button{
-
-    }
     .main-button button:nth-child(1){
         margin-right:40px;
     }
