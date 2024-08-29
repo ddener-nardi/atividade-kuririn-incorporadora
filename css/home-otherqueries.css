@@ -149,5 +149,17 @@
     .vertical-dots{
         display: none;
     }
+    .list-info-nav{
+        columns: 1;
+    }
+    .mar-info{
+        margin-bottom: 20px;
+    }
+    .footer-rights p{
+        font-size: 14px;
+    }
+    .footer-rights p:nth-child(1)::after{
+        content: none;
+    }
 }
 
