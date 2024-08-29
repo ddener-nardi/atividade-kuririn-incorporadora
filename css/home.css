@@ -315,3 +315,39 @@ body{
 .whats-footer-infos .col-4:nth-child(2){
     border-right: 1px solid rgba(255, 255, 255, 0.315);
 }
+/* fourth main section */
+.expla-section{
+    background-color: #000;
+    min-height: 958px;
+    height: 100%;
+}
+.year-and-divisor img{
+    width: 539px;
+    height: 182px;
+    top: -100px;
+    right: 0;
+}
+.year-and-divisor .email-divisor{
+    margin-bottom: 166px;
+}
+.expla-title{
+    padding-top: 168px;
+}
+.expla-title h4{
+    color: white;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+.expla-par{
+    color: white;
+}
+.expla-buttons .btn.btn-primary{
+    height: 51px;
+    margin-right: 21px;
+    text-transform: uppercase;
+}
+.expla-buttons .btn.btn-primary.btn-transparent{
+    height: 51px;
+    text-transform: uppercase;
+    background-color: transparent;
+}

@@ -43,6 +43,12 @@
         margin-right: 20px;
         margin-left: 40px;
     }
+    .expla-title h4{
+        color: white;
+        font-size: 23px;
+        text-transform: uppercase;
+    }
+    
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px){
@@ -72,9 +78,6 @@
         bottom: -400px;
         z-index: 1111;
     }
-    .main-button{
-
-    }
     .main-button button:nth-child(1){
         margin-right:40px;
     }
@@ -85,6 +88,18 @@
     .vertical-dots .dot{
         margin-right: 20px;
         margin-left: 40px;
+    }
+    .year-and-divisor img{
+        width: 539px;
+        height: 182px;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 1;
+    }
+    .expla-title h4{
+        position: relative;
+        font-size: 25px;
+        z-index: 2;
     }
 }
 @media screen and (max-width: 767px){
@@ -160,6 +175,26 @@
     }
     .footer-rights p:nth-child(1)::after{
         content: none;
+    }
+    .expla-buttons button{
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+    .year-and-divisor .email-divisor{
+        margin-bottom: 10px;
+    }
+    .year-img-sm{
+        width: 291px;
+        height: 80px;
+        left: 50%;
+        transform: translate(-50%, -70%);
+        z-index: 1;
+    }
+    .expla-title h4{
+        position: relative;
+        z-index: 2;
+        padding-top: 150px;
     }
 }
 
