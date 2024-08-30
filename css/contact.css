@@ -39,7 +39,14 @@
     height: 51px;
     color: black;
     padding-left: 10px;
+    font-style: italic;
     /* margin: 19px 0 0 0; */
+}
+.second-container div{
+    margin-top: 19px;
+}
+.second-container div:nth-child(1){
+    margin-top: 0;
 }
 .second-container input::placeholder{
     color: black;
@@ -48,9 +55,61 @@
     width: 100%;
     height: 100%;
     color: black;
+    font-style: italic;
     /* margin-top: 19px; */
 }
 .second-container textarea::placeholder{
     color: black;
     padding-left: 10px;
 }
+.second-container select{
+    width: 100%;
+    height: 51px;
+    padding: 0 10px;
+    font-style: italic;
+}
+.contact-inputs .btn.btn-primary{
+    width: 276px;
+    height: 51px;
+    text-transform: uppercase;
+}
+.location-contact{
+    background-color: black;
+    color: white;
+    min-height: 188px;
+    height: 100%;
+    border-radius: 3px;
+}
+.contact-inputs p{
+    color: #808080;
+}
+.location-section h2{
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--color1);
+}
+.location-divisor{
+    height: 9px;
+    width: 100%;
+    background-color: black;
+}
+.atendimento-loc img{
+    background-color: white;
+    padding: 9px 11px;
+    border-radius: 50%;
+}
+.info-location-phone img{
+    background-color: white;
+    padding: 9px;
+    border-radius: 50%;
+}
+.info-whatsapp{
+    background-color: var(--color2);
+    height: 74px;
+    width: 239px;
+    border-radius: 3px;
+}
+.info-whatsapp h6{
+    font-weight: 600;
+}
+
