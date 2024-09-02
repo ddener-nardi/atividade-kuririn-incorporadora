@@ -455,3 +455,7 @@ body{
     text-transform: uppercase;
     background-color: transparent;
 }
+.expla-buttons a{
+    text-decoration: none;
+    color: white;
+}
