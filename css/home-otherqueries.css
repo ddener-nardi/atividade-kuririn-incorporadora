@@ -193,5 +193,13 @@
         z-index: 2;
         padding-top: 150px;
     }
+    .emp-info h3{
+        font-size: 18px;
+    }
+    .emp-info p:nth-child(1){
+        margin: 20px 0 15px 0;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
 }
 
