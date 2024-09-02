@@ -263,9 +263,60 @@ body{
     border-bottom: 3px solid black;
     color: #000;
 }
-.border-image img{
-    margin-bottom: -8px;
+.border-image img{ 
     border-bottom: 8px solid black;
+    transition: .5s;
+}
+.border-image img:hover{
+    border-bottom: 8px solid var(--color1) ;
+}
+.text-underline{
+    cursor: pointer;
+}
+.text-underline:hover{
+    text-decoration: underline;
+}
+
+/* f main section */
+.swip-blog-date{
+    position: absolute;
+    width: 114px;
+    height: 114px;
+    color: white;
+    bottom: 20px;
+    left: 20px;
+    background-color: var(--color1);
+}
+.swip-image{
+    cursor: pointer;
+    transition: .5s;
+}
+.swip-image:hover .swip-blog-date{
+    background-color: #C61400;
+}
+.swip-blog-date h2{
+    font-weight: 700;
+    font-size: 48px;
+}
+.swip-blog-date-p{
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.swip-image img{
+    width: 100%;
+}
+.swip-text-title{
+    font-size: 23px;
+    font-weight: 500;
+}
+.swip-text-subtitle{
+    font-size: 19px;
+    font-weight: 300;
+}
+.swip-text-learn-more{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color1);
 }
 /* footer */
 /* footer first sec */

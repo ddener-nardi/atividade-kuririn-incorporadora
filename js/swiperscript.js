@@ -45,3 +45,28 @@ var swiper = new Swiper(".allLotsSwiper", {
         prevEl: ".swip-btn-prev-lot",
       },
 });
+
+var swiper = new Swiper(".blogSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    // pagination: {
+    //   el: ".swiper-pagination",
+    //   clickable: true,
+    // },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+        },
+        992: {
+            slidesPerView: 2,
+        },
+        1200: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+    },
+    navigation: {
+        nextEl: ".swip-btn-next-blog",
+        prevEl: ".swip-btn-prev-blog",
+      },
+});
