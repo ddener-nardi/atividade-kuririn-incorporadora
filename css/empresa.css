@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color1: #8A1002;
+    --color2: #028A49;
+    --color3: #FFAE5C;
+    --fontmontserrat: 'Montserrat';
+
+
+}
+
+.btn.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #8A1002;
+    --bs-btn-border-color: #8A1002;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #C61400;
+    --bs-btn-hover-border-color: #C61400;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #8A1002;
+    --bs-btn-active-border-color: #8A1002;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #8A1002;
+    --bs-btn-disabled-border-color: #8A1002;
+}
+
+.btn.btn-secondary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #000;
+    --bs-btn-border-color: #000;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #5c636a;
+    --bs-btn-hover-border-color: #565e64;
+    --bs-btn-focus-shadow-rgb: 130,138,145;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #000;
+    --bs-btn-active-border-color: #000;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #6c757d;
+    --bs-btn-disabled-border-color: #6c757d;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.enterprise-title h4{
+    font-size: 30px;
+    color: var(--color1);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.emp-divisor{
+    height: 9px;
+    width: 100%;
+    background-color: black;
+}
+.left-image, 
+.right-image{
+    width: 542px;
+    height: 361px;
+}
+.left-image{
+    background-image:
+    linear-gradient(to top, transparent, #5b152e55),
+    url(../imgs/enterprise-img-left.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.right-image{
+    background-image:
+    linear-gradient(to top, transparent, #5b152e55),
+    url(../imgs/enterprise-img-right.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.left-text p,
+.right-text p{
+    font-size: 18px;
+    color: #4A4A4A;
+}
+.left-text a{
+    color: var(--color1);
+    font-size: 17px;
+    font-weight: 500;
+}
