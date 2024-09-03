@@ -1,0 +1,291 @@
+@charset "utf-8";
+@import url("https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color1: #8A1002;
+    --color2: #028A49;
+    --color3: #FFAE5C;
+    --fontmontserrat: 'Montserrat';
+
+
+}
+
+.btn.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #8A1002;
+    --bs-btn-border-color: #8A1002;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #C61400;
+    --bs-btn-hover-border-color: #C61400;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #8A1002;
+    --bs-btn-active-border-color: #8A1002;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #8A1002;
+    --bs-btn-disabled-border-color: #8A1002;
+}
+
+.btn.btn-secondary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #000;
+    --bs-btn-border-color: #000;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #5c636a;
+    --bs-btn-hover-border-color: #565e64;
+    --bs-btn-focus-shadow-rgb: 130,138,145;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #000;
+    --bs-btn-active-border-color: #000;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #6c757d;
+    --bs-btn-disabled-border-color: #6c757d;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.image-lot{
+    width: 100%;
+    height: 360px;
+    background-image: linear-gradient(to top, transparent, #5b152e70),
+    url(../imgs/loteamento-main-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.description-title h4{
+    color: var(--color1);
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.title-divisor{
+    height: 9px;
+    width: 100%;
+    background-color: black;
+}
+.description-description{
+    height: 364px;
+}
+.description-description p{
+    font-size: 18px;
+}
+.description-range{
+    height: 77px;
+    background-color: #000;
+    border-radius: 3px;
+    margin-bottom: 124px;
+}
+.range-input input{
+    width: 90%;
+    height: 4px;
+}
+[type="range"] {
+	background-color: transparent;
+	cursor: pointer;
+}
+@supports (appearance: none) {
+	
+	[type="range"] {
+		width: 100%;
+		height: 4px;
+		padding: 0;
+		appearance: none;
+	}
+
+	[type="range"]:focus {
+		outline: none;
+	}
+
+	[type="range"]:focus::-webkit-slider-thumb {
+		box-shadow: 
+			0 0 0 1px #028A49, 
+			0 0 0 0.2rem #028A49;
+	}
+
+	[type="range"]:focus::-moz-range-thumb {
+		box-shadow: 
+			0 0 0 1px #028A49, 
+			0 0 0 0.2rem #028A49;
+	}
+
+	[type="range"]:focus::-ms-thumb {
+		box-shadow: 
+			0 0 0 1px #028A49, 
+			0 0 0 0.2rem #028A49;
+	}
+
+	[type="range"]::-moz-focus-outer {
+		border: 0;
+	}
+
+	[type="range"]::-webkit-slider-thumb {
+		width: 14px;
+		height: 14px;
+		margin-top: -0.25rem;
+		background-color: #00DD73;
+		border: 0;
+		border-radius: 1.5rem;
+		transition:
+			background-color 0.15s ease-in-out, 
+			border-color 0.15s ease-in-out,
+			box-shadow 0.15s ease-in-out;
+		appearance: none;
+	}
+
+	[type="range"]::-webkit-slider-thumb:active {
+		background-color: #bed8fe;
+	}
+
+	[type="range"]::-webkit-slider-runnable-track {
+		width: 100%;
+		height: 4px;
+		color: transparent;
+		cursor: pointer;
+		background-color: #4A4A4A;
+		border-color: transparent;
+	}
+
+	[type="range"]::-moz-range-thumb {
+		width: 14px;
+		height: 14px;
+		background-color: #00DD73;
+		border: 0;
+		border-radius: 1.5rem;
+		transition: 
+			background-color 0.15s ease-in-out, 
+			border-color 0.15s ease-in-out,
+			box-shadow 0.15s ease-in-out;
+		appearance: none;
+	}
+
+	[type="range"]::-moz-range-thumb:active {
+		background-color: #bed8fe;
+	}
+
+	[type="range"]::-moz-range-track {
+		width: 100%;
+		height: 4px;
+		color: transparent;
+		cursor: pointer;
+		background-color: #4A4A4A;
+		border-color: transparent;
+	}
+
+    [type="range"]::-moz-range-progress{
+        background-color: #028A49;
+    }
+
+	[type="range"]::-ms-thumb {
+		width: 1.5rem;
+		height: 1.5rem;
+		margin-top: 0;
+		margin-right: 0.2rem;
+		margin-left: 0.2rem;
+		background-color: #0d6efd;
+		border: 0;
+		border-radius: 1.5rem;
+		transition: 
+			background-color 0.15s ease-in-out, 
+			border-color 0.15s ease-in-out,
+			box-shadow 0.15s ease-in-out;
+		appearance: none;
+	}
+
+	[type="range"]::-ms-thumb:active {
+		background-color: #bed8fe;
+	}
+
+	[type="range"]::-ms-track {
+		width: 100%;
+		height: 0.65rem;
+		color: transparent;
+		cursor: pointer;
+		background-color: transparent;
+		border-color: transparent;
+	}
+
+	[type="range"]::-ms-fill-lower {
+		background-color: #dee2e6;
+		border-radius: 1rem;
+	}
+
+	[type="range"]::-ms-fill-upper {
+		margin-right: 15px;
+		background-color: #dee2e6;
+		border-radius: 1rem;
+	}
+
+	[type="range"]:disabled {
+		pointer-events: none;
+	}
+
+	[type="range"]:disabled::-webkit-slider-thumb {
+		background-color: #adb5bd;
+	}
+
+	[type="range"]:disabled::-moz-range-thumb {
+		background-color: #00DD73;
+	}
+
+	[type="range"]:disabled::-ms-thumb {
+		background-color: #adb5bd;
+	}
+}
+
+.description-range-head h6{
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.percent-row img{
+    width: 30px;
+    height: 35px;
+}
+.percent-row p{
+    font-weight: 500;
+}
+.aproximate-row{
+    min-height: 233px;
+    height: 100%;
+    background-color: #8A1002;
+    border-radius: 3px;
+}
+.aproximate-row h4, .aproximate-row h5{
+    color: white;
+}
+.aproximate-row h4{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+.aproximate-row h5{
+    font-size: 20px;
+    font-weight: 300;
+}
+.title-images h4{
+    margin-top: 120px;
+    color: var(--color1);
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.swip-zoom{
+    background-color: #8A1002;
+    width: 65px;
+    height: 65px;
+    left: 20px;
+    bottom: 25px;
+}
+.swip-zoom i{
+    color: white;
+    font-size: 18px;
+}
+.post-div-par p{
+    font-size: 17px;
+    font-weight: 400;
+}
