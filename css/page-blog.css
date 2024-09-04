@@ -156,3 +156,146 @@
     transform: translatey(-5px);
     background-color: #00000017;
 }
+.other-publications .date{
+    font-weight: 600;
+    font-size: 16px;
+}
+.other-publications .publi-name{
+    font-weight: 400;
+    font-size: 16px;
+}
+.other-publications .publication{
+    cursor: pointer;
+}
+.other-publications .publication:hover{
+    text-decoration: underline;
+}
+.mini-divisor{
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+}
+.icon-media{
+    width: 57px;
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s;
+}
+.icon-media:nth-child(1){
+    background-color: #CB2027;
+}
+.icon-media:nth-child(1):hover{
+    background-color: #FF2932;
+}
+.icon-media:nth-child(2){
+    background-color: #03A9F4;
+}
+.icon-media:nth-child(2):hover{
+    background-color: #36C1FF;
+}
+.icon-media:nth-child(3){
+    background-color: #1976D2;
+}
+.icon-media:nth-child(3):hover{
+    background-color: #228EF9;
+}
+.icon-media:nth-child(4){
+    background-color: #0077B5;
+}
+.icon-media:nth-child(4):hover{
+    background-color: #008AD2;
+}
+.comment-inputs input{
+    width: 100%;
+    height: 51px;
+    padding-left: 20px;
+    color: #000;
+    font-weight: 500;
+    
+}
+.comment-inputs input::placeholder{
+    color: #000;
+}
+.comment-inputs textarea{
+    width: 100%;
+    height: 191px;
+    padding-left: 20px;
+    padding-top: 20px;
+    color: #000;
+    font-weight: 500;
+
+}
+.comment-inputs textarea::placeholder{
+    color: #000;
+}
+.paragraph{
+    font-size: 14px;
+    color: #808080;
+}
+.button button{
+    width: 100%;
+    height: 51px;
+} 
+.comment-photo i{
+    font-size: 78px;
+    color: var(--color1);
+}
+.comment-text h5{
+    font-size: 20px;
+    font-weight: 600;
+}
+.comment-text p{
+    font-size: 18px;
+    color: #808080;
+}
+.social-medias h6, .comments h6{
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+}
+.comments{
+    margin-bottom: 137px;
+}
+.comment-inputs{
+    overflow: hidden;
+    opacity: 0;
+    max-height: 0;
+    visibility: hidden;
+    transition: max-heigth 0.9s ease, visibility 0.9s ease, opacity 0.9s ease;
+}
+.comment-inputs.show{
+    opacity: 1;
+    max-height: 100%;
+    visibility: visible;
+    transition: max-heigth 0.9s ease, visibility 0.9s ease, opacity 0.9s ease;
+}
+.check-comment{
+    overflow: hidden;
+    opacity: 0;
+    max-height: 0;
+    visibility: hidden;
+    transition: max-heigth 0.9s ease, visibility 0.9s ease, opacity 0.9s ease;
+}
+.check-comment.show{
+    opacity: 1;
+    max-height: 100%;
+    visibility: visible;
+    transition: max-heigth 0.9s ease, visibility 0.9s ease, opacity 0.9s ease;
+}
+.check-comment p{
+    font-size: 22px;
+}
+.check-icon{
+    width: 50px;
+    height: 50px;
+    background-color: #028A49;
+    border-radius: 50%;
+}
+.check-icon i{
+    font-size: 40px;
+    color: white;
+}
