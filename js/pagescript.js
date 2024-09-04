@@ -6,7 +6,7 @@ const emComment = document.querySelector('#em-comment')
 const textComment = document.querySelector('#text-comment')
 
 const validateBtn = () => {
-    if(nameComment.value != 0 && emComment.value != 0 && textComment.value != 0){
+    if(nameComment.value != "" && emComment.value != "" && textComment.value != ""){
         sendComment.disabled = false;
     }
 }
