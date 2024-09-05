@@ -1,5 +1,7 @@
 const navLotPar = document.querySelectorAll('.nav-lot-par')
 const allLotsSwiper = document.querySelectorAll('.allLotsSwiper')
+const empInfo = document.querySelectorAll('.emp-info.text-underline')
+const swipText = document.querySelectorAll('.swip-text')
 
 // functions
 const activeSwiperSec = (index) => {
@@ -16,5 +18,21 @@ navLotPar.forEach((lotPar, index) => {
         lotPar.classList.add('active')
         oldActivePar = lotPar
         activeSwiperSec(index)
+    })
+})
+
+empInfo.forEach((info, index) =>{
+    info.addEventListener('click', function(){
+        if(index % 2 == 0){
+            location.href = 'loteamento.html'
+        } else{
+            location.href = 'error.html'
+        }
+    })
+})
+
+swipText.forEach((text) =>{
+    text.addEventListener('click', function(){
+        location.href = 'page-blog.html'
     })
 })
