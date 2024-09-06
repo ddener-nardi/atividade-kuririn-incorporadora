@@ -87,7 +87,7 @@ var swiper = new Swiper(".imageSwiper", {
         },
         1200: {
             slidesPerView: 3,
-            spaceBetween: 30,
+        
         },
     },
     navigation: {

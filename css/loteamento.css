@@ -280,6 +280,10 @@
     height: 65px;
     left: 20px;
     bottom: 25px;
+	cursor: pointer;
+}
+.swip-zoom:hover{
+	background-color: #C61400;
 }
 .swip-zoom i{
     color: white;
@@ -288,4 +292,18 @@
 .post-div-par p{
     font-size: 17px;
     font-weight: 400;
+}
+/* .modal-content{
+	width: 800px;
+	height: 600px;
+} */
+ .modal-title{
+	font-family: var(--fontmontserrat);
+	text-transform: uppercase;
+	font-weight: 800;
+	color: #8A1002;
+}
+.modal-content img{
+	width: 100%;
+	height: 100%;
 }
