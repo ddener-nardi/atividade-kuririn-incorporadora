@@ -70,7 +70,8 @@
     background-color: black;
 }
 .description-description{
-    height: 364px;
+    min-height: 364px;
+	height: 100%;
 }
 .description-description p{
     font-size: 18px;

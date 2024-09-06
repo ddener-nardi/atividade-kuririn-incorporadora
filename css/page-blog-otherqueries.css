@@ -1,0 +1,11 @@
+@media screen and (max-width: 767px){
+    .blog-content{
+        height: 100%;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background-color: #000000e9;
+        backdrop-filter: blur(9px);
+        border-bottom: 9px solid #8A1002;
+    }
+}

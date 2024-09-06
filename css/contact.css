@@ -32,7 +32,8 @@
     color: #767676;
 }
 .second-container{
-    height: 528px;
+    min-height: 528px;
+    /* height: 100%; */
 }
 .second-container input{
     width: 100%;
