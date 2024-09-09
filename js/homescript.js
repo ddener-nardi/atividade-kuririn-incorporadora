@@ -9,6 +9,14 @@ const bodyForMenu = document.querySelector('.bodyForM')
 const menuAbrir = document.querySelector('.menu-abrir')
 const menuFechar = document.querySelector('.menu-fechar')
 
+const firstSecImages = document.querySelectorAll('.front-section-images .f-section-img')
+const firstSecDots = document.querySelectorAll('.vertical-dots .dot')
+const prevBtn = document.querySelector('#vertical-prev')
+const nextBtn =  document.querySelector('#vertical-next')
+
+const acceptBtn = document.querySelector('#accept-cookie-btn')
+const cookie = document.querySelector('.cookies')
+
 // functions
 const activeSwiperSec = (index) => {
     allLotsSwiper.forEach((swiper) =>{
@@ -16,6 +24,43 @@ const activeSwiperSec = (index) => {
     })
     allLotsSwiper[index].classList.remove('d-none')
 }
+
+const changeImg = (step) => {
+    let oldActiveImg = document.querySelector('.front-section-images .f-section-img.active')
+    let oldActiveDot = document.querySelector('.vertical-dots .dot.active')
+
+    firstSecImages[step].classList.add('active')
+    firstSecDots[step].classList.add('active')
+    oldActiveImg.classList.remove('active')
+    oldActiveDot.classList.remove('active')
+}
+
+let activeStep = 0
+const count = firstSecImages.length
+nextBtn.addEventListener('click', function(){
+    activeStep += 1
+    if(activeStep >= count){
+        activeStep = 0
+    }
+    changeImg(activeStep)
+})
+prevBtn.addEventListener('click', function(){
+    activeStep -= 1
+    if(activeStep < 0){
+        activeStep = count - 1
+    }
+    changeImg(activeStep)
+})
+firstSecDots.forEach((dot, index) => {
+    dot.addEventListener('click', function(){
+        changeImg(index)
+        activeStep = index
+    })
+})
+// auto run
+let refreshImg = setInterval(() =>{
+    nextBtn.click();
+}, 3000)
 // events
 menu.addEventListener('click', function(){
     menu.classList.toggle('active')
@@ -58,4 +103,8 @@ swipText.forEach((text) =>{
     text.addEventListener('click', function(){
         location.href = 'page-blog.html'
     })
+})
+
+acceptBtn.addEventListener('click', function(){
+    cookie.classList.add('hide')
 })

@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@media screen and (min-width: 1401px) {
+@media screen and (min-width: 1200px) {
     .front-lead h1{
         color: var(--color3);
         font-weight: 800;
@@ -28,6 +28,9 @@
         top: none;
         bottom: -400px;
         z-index: 1111;
+    }
+    .front-lead h1{
+        font-size: 35px;
     }
     .main-button button:nth-child(1){
         margin-right:40px;
@@ -243,6 +246,9 @@
     } */
     .emp-info{
         text-align: center;
+    }
+    .cookies{
+        display: none;
     }
 }
 
