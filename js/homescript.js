@@ -13,6 +13,7 @@ const firstSecImages = document.querySelectorAll('.front-section-images .f-secti
 const firstSecDots = document.querySelectorAll('.vertical-dots .dot')
 const prevBtn = document.querySelector('#vertical-prev')
 const nextBtn =  document.querySelector('#vertical-next')
+const frontLeadPs = document.querySelectorAll('.front-lead-ps')
 
 const acceptBtn = document.querySelector('#accept-cookie-btn')
 const cookie = document.querySelector('.cookies')
@@ -28,11 +29,15 @@ const activeSwiperSec = (index) => {
 const changeImg = (step) => {
     let oldActiveImg = document.querySelector('.front-section-images .f-section-img.active')
     let oldActiveDot = document.querySelector('.vertical-dots .dot.active')
+    let oldActiveLead = document.querySelector('.front-lead-ps.show')
 
     firstSecImages[step].classList.add('active')
     firstSecDots[step].classList.add('active')
+    frontLeadPs[step].classList.add('show')
+
     oldActiveImg.classList.remove('active')
     oldActiveDot.classList.remove('active')
+    oldActiveLead.classList.remove('show')
 }
 
 let activeStep = 0

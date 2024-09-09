@@ -280,6 +280,17 @@ body{
     text-transform: uppercase;
     font-size: 20px;
 }
+.front-lead-ps{
+    visibility: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+.front-lead-ps.show{
+    visibility: visible;
+    max-height: 100%;
+    opacity: 1;
+}
 .lead-btn{
     border: 2px solid white;
     padding: 16px 26px;
@@ -493,10 +504,10 @@ body{
 }
 .info-social-medias img{
     margin-left: 57px;
+    cursor: pointer;
 }
-.info-social-medias img:{
-    fill: #767676;
-
+.info-social-medias img:hover{
+    filter: invert(27%) sepia(19%) saturate(0%) hue-rotate(0deg) brightness(91%) contrast(90%);
 }
 .main-footer-divisor{
     height: 1px;

@@ -62,6 +62,9 @@
     font-weight: 400;
     font-size: 13px;
 }
+.category:hover{
+    background-color: #DADADA;
+}
 .category.active{
     background-color: black;
     color: white;
@@ -95,8 +98,9 @@
 }
 .emp-navigation-square:hover{
     transform: translateY(-3px);
-    color: rgba(0, 0, 0, 0.35);
+    color: rgba(0, 0, 0);
     border-color: rgba(0, 0, 0, 0.35);
+    background-color: #C4C4C4;
 }
 .emp-navigation-square.active{
     color: white;
