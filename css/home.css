@@ -579,6 +579,13 @@ body{
     text-decoration: none;
     color: white;
 }
+.footer-rights p > img{
+    cursor: pointer;
+    
+}
+.footer-rights p > img:hover{
+    filter: invert(27%) sepia(19%) saturate(0%) hue-rotate(0deg) brightness(91%) contrast(90%);
+}
 .cookies{
     left: 30px;
     bottom: 30px;
