@@ -345,7 +345,12 @@ body{
     text-transform: uppercase;
     cursor: pointer;
     padding-bottom: 26px;
+    font-weight: 500;
     transition: .5s;
+}
+.nav-lots p:hover{
+    color: #767676;
+    border-bottom: 3px solid #767676;
 }
 .nav-lots p.active{
     border-bottom: 3px solid black;
@@ -488,6 +493,10 @@ body{
 }
 .info-social-medias img{
     margin-left: 57px;
+}
+.info-social-medias img:{
+    fill: #767676;
+
 }
 .main-footer-divisor{
     height: 1px;
