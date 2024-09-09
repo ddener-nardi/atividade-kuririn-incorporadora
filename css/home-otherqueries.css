@@ -160,7 +160,11 @@
     .front-lead{
         margin-top: 180px ;
     }
-    
+    .front-lead-ps{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
     .vertical-dots{
         display: none;
     }
